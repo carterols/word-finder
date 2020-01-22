@@ -22,7 +22,7 @@ def main():
     getAllWords()
     wordsFound = []
 
-    for i in range(MIN_WORD_SIZE, len(text)):
+    for i in range(MIN_WORD_SIZE, len(text) + 1):
         wordsFound.append([])
         strPerms = set(permutation(text, i))
         for word in strPerms:
